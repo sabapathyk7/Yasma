@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		279A499F48295F712FC3C363 /* Pods_YasmaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A78DF6E7F6838E882DFB59 /* Pods_YasmaUITests.framework */; };
 		A23CF797211981A700A76E8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CF796211981A700A76E8F /* AppDelegate.swift */; };
 		A23CF799211981A700A76E8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CF798211981A700A76E8F /* ViewController.swift */; };
 		A23CF79C211981A700A76E8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A23CF79A211981A700A76E8F /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 		A23CF7A4211981A900A76E8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A23CF7A2211981A900A76E8F /* LaunchScreen.storyboard */; };
 		A23CF7AF211981AA00A76E8F /* YasmaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CF7AE211981AA00A76E8F /* YasmaTests.swift */; };
 		A23CF7BA211981AA00A76E8F /* YasmaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CF7B9211981AA00A76E8F /* YasmaUITests.swift */; };
+		C584698D7B023D2AEB3C7FDC /* Pods_YasmaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ACB46285429EEE26728F883 /* Pods_YasmaTests.framework */; };
+		F8A1A9E18C6F76E9258CB1DB /* Pods_Yasma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA5AB3A26BF2762C4C023BA /* Pods_Yasma.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1ACB46285429EEE26728F883 /* Pods_YasmaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YasmaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DA5AB3A26BF2762C4C023BA /* Pods_Yasma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yasma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		334E1CF34747DC819C0E64A2 /* Pods-Yasma.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yasma.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yasma/Pods-Yasma.debug.xcconfig"; sourceTree = "<group>"; };
+		35009136F7ED0FCE7F9DF7AD /* Pods-YasmaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YasmaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YasmaUITests/Pods-YasmaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		63B9E283D05CCBF15DDE33C0 /* Pods-YasmaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YasmaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YasmaTests/Pods-YasmaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		87A78DF6E7F6838E882DFB59 /* Pods_YasmaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YasmaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A23CF793211981A700A76E8F /* Yasma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yasma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A23CF796211981A700A76E8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A23CF798211981A700A76E8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +58,9 @@
 		A23CF7B5211981AA00A76E8F /* YasmaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YasmaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A23CF7B9211981AA00A76E8F /* YasmaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YasmaUITests.swift; sourceTree = "<group>"; };
 		A23CF7BB211981AA00A76E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC1B45DBE63E14CFF2ACBC15 /* Pods-YasmaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YasmaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YasmaUITests/Pods-YasmaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FA47D997760216EFA0B1BEF9 /* Pods-YasmaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YasmaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YasmaTests/Pods-YasmaTests.release.xcconfig"; sourceTree = "<group>"; };
+		FCD6BB707EA42334FD64C5B2 /* Pods-Yasma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yasma.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yasma/Pods-Yasma.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8A1A9E18C6F76E9258CB1DB /* Pods_Yasma.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C584698D7B023D2AEB3C7FDC /* Pods_YasmaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				279A499F48295F712FC3C363 /* Pods_YasmaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F2358F795B46188F06F6C3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				334E1CF34747DC819C0E64A2 /* Pods-Yasma.debug.xcconfig */,
+				FCD6BB707EA42334FD64C5B2 /* Pods-Yasma.release.xcconfig */,
+				63B9E283D05CCBF15DDE33C0 /* Pods-YasmaTests.debug.xcconfig */,
+				FA47D997760216EFA0B1BEF9 /* Pods-YasmaTests.release.xcconfig */,
+				35009136F7ED0FCE7F9DF7AD /* Pods-YasmaUITests.debug.xcconfig */,
+				AC1B45DBE63E14CFF2ACBC15 /* Pods-YasmaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A23CF78A211981A600A76E8F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +111,8 @@
 				A23CF7AD211981AA00A76E8F /* YasmaTests */,
 				A23CF7B8211981AA00A76E8F /* YasmaUITests */,
 				A23CF794211981A700A76E8F /* Products */,
+				0F2358F795B46188F06F6C3B /* Pods */,
+				D557BF5FCF4127B563B536A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +158,16 @@
 			path = YasmaUITests;
 			sourceTree = "<group>";
 		};
+		D557BF5FCF4127B563B536A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DA5AB3A26BF2762C4C023BA /* Pods_Yasma.framework */,
+				1ACB46285429EEE26728F883 /* Pods_YasmaTests.framework */,
+				87A78DF6E7F6838E882DFB59 /* Pods_YasmaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A23CF7BE211981AA00A76E8F /* Build configuration list for PBXNativeTarget "Yasma" */;
 			buildPhases = (
+				77D9090D670D0782EA34A771 /* [CP] Check Pods Manifest.lock */,
 				A23CF78F211981A700A76E8F /* Sources */,
 				A23CF790211981A700A76E8F /* Frameworks */,
 				A23CF791211981A700A76E8F /* Resources */,
+				CBBDA7217B7FBA74B4B57CF0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A23CF7C1211981AA00A76E8F /* Build configuration list for PBXNativeTarget "YasmaTests" */;
 			buildPhases = (
+				4C59C41509E3F3193A6935DF /* [CP] Check Pods Manifest.lock */,
 				A23CF7A6211981AA00A76E8F /* Sources */,
 				A23CF7A7211981AA00A76E8F /* Frameworks */,
 				A23CF7A8211981AA00A76E8F /* Resources */,
@@ -170,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A23CF7C4211981AA00A76E8F /* Build configuration list for PBXNativeTarget "YasmaUITests" */;
 			buildPhases = (
+				63305AE17080EFEEB605162C /* [CP] Check Pods Manifest.lock */,
 				A23CF7B1211981AA00A76E8F /* Sources */,
 				A23CF7B2211981AA00A76E8F /* Frameworks */,
 				A23CF7B3211981AA00A76E8F /* Resources */,
@@ -253,6 +297,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C59C41509E3F3193A6935DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YasmaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63305AE17080EFEEB605162C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YasmaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77D9090D670D0782EA34A771 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yasma-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBBDA7217B7FBA74B4B57CF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Yasma/Pods-Yasma-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yasma/Pods-Yasma-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A23CF78F211981A700A76E8F /* Sources */ = {
@@ -432,6 +551,7 @@
 		};
 		A23CF7BF211981AA00A76E8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 334E1CF34747DC819C0E64A2 /* Pods-Yasma.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +569,7 @@
 		};
 		A23CF7C0211981AA00A76E8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCD6BB707EA42334FD64C5B2 /* Pods-Yasma.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +587,7 @@
 		};
 		A23CF7C2211981AA00A76E8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B9E283D05CCBF15DDE33C0 /* Pods-YasmaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,6 +608,7 @@
 		};
 		A23CF7C3211981AA00A76E8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA47D997760216EFA0B1BEF9 /* Pods-YasmaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +629,7 @@
 		};
 		A23CF7C5211981AA00A76E8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35009136F7ED0FCE7F9DF7AD /* Pods-YasmaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -525,6 +649,7 @@
 		};
 		A23CF7C6211981AA00A76E8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC1B45DBE63E14CFF2ACBC15 /* Pods-YasmaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

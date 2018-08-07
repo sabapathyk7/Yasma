@@ -1,0 +1,6 @@
+framework module Pods_YasmaUITests {
+  umbrella header "Pods-YasmaUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

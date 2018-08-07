@@ -1,4 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Album" representedClassName="Album" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="userRelation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Users" inverseName="albumRelationship" inverseEntity="Users" syncable="YES"/>
+    </entity>
+    <entity name="Comments" representedClassName="Comments" syncable="YES" codeGenerationType="class">
+        <attribute name="comment_body" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="post_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="postRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Posts" inverseName="commentsRelationship" inverseEntity="Posts" syncable="YES"/>
+    </entity>
+    <entity name="Photos" representedClassName="Photos" syncable="YES" codeGenerationType="class">
+        <attribute name="album_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Posts" representedClassName="Posts" syncable="YES" codeGenerationType="class">
+        <attribute name="body" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="commentsRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Comments" inverseName="postRelationship" inverseEntity="Comments" syncable="YES"/>
+        <relationship name="userRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Users" inverseName="postRelationship" inverseEntity="Users" syncable="YES"/>
+    </entity>
+    <entity name="Users" representedClassName="Users" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="albumRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Album" inverseName="userRelation" inverseEntity="Album" syncable="YES"/>
+        <relationship name="postRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Posts" inverseName="userRelationship" inverseEntity="Posts" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Posts" positionX="-558" positionY="-351" width="128" height="133"/>
+        <element name="Album" positionX="-191" positionY="-337" width="128" height="88"/>
+        <element name="Users" positionX="-378" positionY="-414" width="128" height="133"/>
+        <element name="Comments" positionX="-378" positionY="-243" width="128" height="133"/>
+        <element name="Photos" positionX="-333" positionY="-234" width="128" height="120"/>
+    </elements>
 </model>

@@ -20,6 +20,7 @@
 		A23CF7CA2119CB7F00A76E8F /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CF7C92119CB7F00A76E8F /* AlbumViewController.swift */; };
 		A23CF7CC2119CC7400A76E8F /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CF7CB2119CC7400A76E8F /* PostDetailViewController.swift */; };
 		A23CF7CE2119CC8200A76E8F /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CF7CD2119CC8200A76E8F /* AlbumDetailViewController.swift */; };
+		A23CF7D12119D8FE00A76E8F /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CF7D02119D8FE00A76E8F /* Webservice.swift */; };
 		C584698D7B023D2AEB3C7FDC /* Pods_YasmaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ACB46285429EEE26728F883 /* Pods_YasmaTests.framework */; };
 		F8A1A9E18C6F76E9258CB1DB /* Pods_Yasma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA5AB3A26BF2762C4C023BA /* Pods_Yasma.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,7 @@
 		A23CF7C92119CB7F00A76E8F /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		A23CF7CB2119CC7400A76E8F /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
 		A23CF7CD2119CC8200A76E8F /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewController.swift; sourceTree = "<group>"; };
+		A23CF7D02119D8FE00A76E8F /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		AC1B45DBE63E14CFF2ACBC15 /* Pods-YasmaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YasmaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YasmaUITests/Pods-YasmaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FA47D997760216EFA0B1BEF9 /* Pods-YasmaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YasmaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YasmaTests/Pods-YasmaTests.release.xcconfig"; sourceTree = "<group>"; };
 		FCD6BB707EA42334FD64C5B2 /* Pods-Yasma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yasma.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yasma/Pods-Yasma.release.xcconfig"; sourceTree = "<group>"; };
@@ -138,12 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				A23CF796211981A700A76E8F /* AppDelegate.swift */,
-				A23CF798211981A700A76E8F /* ViewController.swift */,
-				A23CF7C72119CB7000A76E8F /* PostViewController.swift */,
-				A23CF7C92119CB7F00A76E8F /* AlbumViewController.swift */,
+				A23CF7CF2119D7EF00A76E8F /* Controllers */,
 				A23CF79A211981A700A76E8F /* Main.storyboard */,
-				A23CF7CD2119CC8200A76E8F /* AlbumDetailViewController.swift */,
-				A23CF7CB2119CC7400A76E8F /* PostDetailViewController.swift */,
 				A23CF7A0211981A900A76E8F /* Assets.xcassets */,
 				A23CF7A2211981A900A76E8F /* LaunchScreen.storyboard */,
 				A23CF7A5211981A900A76E8F /* Info.plist */,
@@ -168,6 +166,19 @@
 				A23CF7BB211981AA00A76E8F /* Info.plist */,
 			);
 			path = YasmaUITests;
+			sourceTree = "<group>";
+		};
+		A23CF7CF2119D7EF00A76E8F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A23CF798211981A700A76E8F /* ViewController.swift */,
+				A23CF7D02119D8FE00A76E8F /* Webservice.swift */,
+				A23CF7C72119CB7000A76E8F /* PostViewController.swift */,
+				A23CF7C92119CB7F00A76E8F /* AlbumViewController.swift */,
+				A23CF7CD2119CC8200A76E8F /* AlbumDetailViewController.swift */,
+				A23CF7CB2119CC7400A76E8F /* PostDetailViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		D557BF5FCF4127B563B536A7 /* Frameworks */ = {
@@ -392,6 +403,7 @@
 			files = (
 				A23CF7C82119CB7000A76E8F /* PostViewController.swift in Sources */,
 				A23CF7CC2119CC7400A76E8F /* PostDetailViewController.swift in Sources */,
+				A23CF7D12119D8FE00A76E8F /* Webservice.swift in Sources */,
 				A23CF7CA2119CB7F00A76E8F /* AlbumViewController.swift in Sources */,
 				A23CF799211981A700A76E8F /* ViewController.swift in Sources */,
 				A23CF7CE2119CC8200A76E8F /* AlbumDetailViewController.swift in Sources */,

@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		279A499F48295F712FC3C363 /* Pods_YasmaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A78DF6E7F6838E882DFB59 /* Pods_YasmaUITests.framework */; };
+		A2075357211C7AB800206026 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2075356211C7AB700206026 /* PostViewModel.swift */; };
+		A207535C211C7B0C00206026 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A207535B211C7B0C00206026 /* PostModel.swift */; };
+		A2075361211C9F2200206026 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2075360211C9F2200206026 /* PostTableViewCell.swift */; };
+		A2075365211CA16F00206026 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2075364211CA16F00206026 /* ViewRouter.swift */; };
+		A2075367211CA23700206026 /* PostViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2075366211CA23700206026 /* PostViewRouter.swift */; };
+		A2075369211CA2A900206026 /* PostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2075368211CA2A900206026 /* PostPresenter.swift */; };
+		A207536B211CA2DA00206026 /* PostConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A207536A211CA2DA00206026 /* PostConfigurator.swift */; };
 		A23CF797211981A700A76E8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CF796211981A700A76E8F /* AppDelegate.swift */; };
 		A23CF799211981A700A76E8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CF798211981A700A76E8F /* ViewController.swift */; };
 		A23CF79C211981A700A76E8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A23CF79A211981A700A76E8F /* Main.storyboard */; };
@@ -49,6 +56,13 @@
 		35009136F7ED0FCE7F9DF7AD /* Pods-YasmaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YasmaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YasmaUITests/Pods-YasmaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		63B9E283D05CCBF15DDE33C0 /* Pods-YasmaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YasmaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YasmaTests/Pods-YasmaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		87A78DF6E7F6838E882DFB59 /* Pods_YasmaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YasmaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2075356211C7AB700206026 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		A207535B211C7B0C00206026 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		A2075360211C9F2200206026 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		A2075364211CA16F00206026 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewRouter.swift; path = /Users/kannan/Documents/Saba/Yasma/Yasma/Controllers/ViewRouter.swift; sourceTree = "<absolute>"; };
+		A2075366211CA23700206026 /* PostViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewRouter.swift; sourceTree = "<group>"; };
+		A2075368211CA2A900206026 /* PostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPresenter.swift; sourceTree = "<group>"; };
+		A207536A211CA2DA00206026 /* PostConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostConfigurator.swift; sourceTree = "<group>"; };
 		A23CF793211981A700A76E8F /* Yasma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yasma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A23CF796211981A700A76E8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A23CF798211981A700A76E8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +128,42 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A2075355211C7A5F00206026 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				A23CF7D02119D8FE00A76E8F /* Webservice.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		A2075358211C7ABC00206026 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A2075356211C7AB700206026 /* PostViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A207535D211C7B0F00206026 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A207535B211C7B0C00206026 /* PostModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A207535F211C9ED800206026 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				A23CF7C72119CB7000A76E8F /* PostViewController.swift */,
+				A2075360211C9F2200206026 /* PostTableViewCell.swift */,
+				A2075366211CA23700206026 /* PostViewRouter.swift */,
+				A2075368211CA2A900206026 /* PostPresenter.swift */,
+				A207536A211CA2DA00206026 /* PostConfigurator.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
 		A23CF78A211981A600A76E8F = {
 			isa = PBXGroup;
 			children = (
@@ -140,9 +190,13 @@
 			isa = PBXGroup;
 			children = (
 				A23CF796211981A700A76E8F /* AppDelegate.swift */,
+				A207535F211C9ED800206026 /* Posts */,
+				A207535D211C7B0F00206026 /* Model */,
+				A2075358211C7ABC00206026 /* ViewModel */,
+				A2075355211C7A5F00206026 /* WebService */,
 				A23CF7CF2119D7EF00A76E8F /* Controllers */,
-				A23CF79A211981A700A76E8F /* Main.storyboard */,
 				A23CF7A0211981A900A76E8F /* Assets.xcassets */,
+				A23CF79A211981A700A76E8F /* Main.storyboard */,
 				A23CF7A2211981A900A76E8F /* LaunchScreen.storyboard */,
 				A23CF7A5211981A900A76E8F /* Info.plist */,
 				A23CF79D211981A700A76E8F /* Yasma.xcdatamodeld */,
@@ -172,11 +226,10 @@
 			isa = PBXGroup;
 			children = (
 				A23CF798211981A700A76E8F /* ViewController.swift */,
-				A23CF7D02119D8FE00A76E8F /* Webservice.swift */,
-				A23CF7C72119CB7000A76E8F /* PostViewController.swift */,
 				A23CF7C92119CB7F00A76E8F /* AlbumViewController.swift */,
 				A23CF7CD2119CC8200A76E8F /* AlbumDetailViewController.swift */,
 				A23CF7CB2119CC7400A76E8F /* PostDetailViewController.swift */,
+				A2075364211CA16F00206026 /* ViewRouter.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -401,12 +454,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2075361211C9F2200206026 /* PostTableViewCell.swift in Sources */,
 				A23CF7C82119CB7000A76E8F /* PostViewController.swift in Sources */,
+				A207535C211C7B0C00206026 /* PostModel.swift in Sources */,
+				A2075367211CA23700206026 /* PostViewRouter.swift in Sources */,
+				A2075365211CA16F00206026 /* ViewRouter.swift in Sources */,
 				A23CF7CC2119CC7400A76E8F /* PostDetailViewController.swift in Sources */,
+				A207536B211CA2DA00206026 /* PostConfigurator.swift in Sources */,
+				A2075369211CA2A900206026 /* PostPresenter.swift in Sources */,
 				A23CF7D12119D8FE00A76E8F /* Webservice.swift in Sources */,
 				A23CF7CA2119CB7F00A76E8F /* AlbumViewController.swift in Sources */,
 				A23CF799211981A700A76E8F /* ViewController.swift in Sources */,
 				A23CF7CE2119CC8200A76E8F /* AlbumDetailViewController.swift in Sources */,
+				A2075357211C7AB800206026 /* PostViewModel.swift in Sources */,
 				A23CF797211981A700A76E8F /* AppDelegate.swift in Sources */,
 				A23CF79F211981A700A76E8F /* Yasma.xcdatamodeld in Sources */,
 			);

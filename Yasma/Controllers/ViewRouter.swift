@@ -5,7 +5,7 @@
 //  Created by kanagasabapathy on 09/08/18.
 //
 
-import Foundation
+import UIKit
 
 protocol ViewRouter {
     func prepare(for segue: UIStoryboardSegue, sender: Any?)

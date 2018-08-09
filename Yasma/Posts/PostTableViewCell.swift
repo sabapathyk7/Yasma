@@ -8,21 +8,23 @@
 
 import UIKit
 
-class PostTableViewCell: UITableViewCell {
+class PostTableViewCell: UITableViewCell, PostCellView {
+    
+    
 
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var postTitleLabel: UILabel!
     @IBOutlet weak var postDescLabel: UILabel!
     
-    func display(userName: String){
+    func display(userName: String) {
         userNameLabel.text = userName
     }
     
-    func display(postTitle: String){
+    func display(postTitle: String) {
         postTitleLabel.text = postTitle
     }
     
-    func display(postDesc: String){
+    func display(postDesc: String) {
         postDescLabel.text = postDesc
     }
     

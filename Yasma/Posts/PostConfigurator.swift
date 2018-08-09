@@ -7,3 +7,21 @@
 //
 
 import Foundation
+
+protocol PostConfigurator {
+    func configure(postViewController: PostViewController)
+}
+
+class PostConfiguratorImplementation: PostConfigurator{
+    
+    
+    func configure(postViewController: PostViewController) {
+        
+        
+        
+        
+    }
+    
+    
+    
+}

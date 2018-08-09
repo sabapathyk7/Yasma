@@ -8,7 +8,10 @@
 
 import UIKit
 
-class PostViewController: UIViewController {
+class PostViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, PostView {
+    
+    @IBOutlet weak var postTableView: UITableView!
+    var presenter: PostPresenter!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +19,24 @@ class PostViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+       return presenter.numberOfPosts
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PostTableViewCell", for: indexPath) as! PostTableViewCell
+        presenter.configure(cell: cell, forRow: indexPath.row)
+        return cell
+    }
+    
+    func refreshPostTableView() {
+        postTableView.reloadData()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

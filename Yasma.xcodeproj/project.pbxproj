@@ -15,6 +15,10 @@
 		A2075367211CA23700206026 /* PostViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2075366211CA23700206026 /* PostViewRouter.swift */; };
 		A2075369211CA2A900206026 /* PostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2075368211CA2A900206026 /* PostPresenter.swift */; };
 		A207536B211CA2DA00206026 /* PostConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A207536A211CA2DA00206026 /* PostConfigurator.swift */; };
+		A207536D211CC2A100206026 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A207536C211CC2A100206026 /* Post.swift */; };
+		A207536F211CD14F00206026 /* PostGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = A207536E211CD14F00206026 /* PostGateway.swift */; };
+		A2075371211CD4E700206026 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2075370211CD4E700206026 /* Result.swift */; };
+		A2075373211CD5E500206026 /* APIPostGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2075372211CD5E500206026 /* APIPostGateway.swift */; };
 		A23CF797211981A700A76E8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CF796211981A700A76E8F /* AppDelegate.swift */; };
 		A23CF799211981A700A76E8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CF798211981A700A76E8F /* ViewController.swift */; };
 		A23CF79C211981A700A76E8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A23CF79A211981A700A76E8F /* Main.storyboard */; };
@@ -63,6 +67,10 @@
 		A2075366211CA23700206026 /* PostViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewRouter.swift; sourceTree = "<group>"; };
 		A2075368211CA2A900206026 /* PostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPresenter.swift; sourceTree = "<group>"; };
 		A207536A211CA2DA00206026 /* PostConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostConfigurator.swift; sourceTree = "<group>"; };
+		A207536C211CC2A100206026 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		A207536E211CD14F00206026 /* PostGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGateway.swift; sourceTree = "<group>"; };
+		A2075370211CD4E700206026 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		A2075372211CD5E500206026 /* APIPostGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPostGateway.swift; sourceTree = "<group>"; };
 		A23CF793211981A700A76E8F /* Yasma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yasma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A23CF796211981A700A76E8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A23CF798211981A700A76E8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,12 +136,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		A2075355211C7A5F00206026 /* WebService */ = {
+		A2075355211C7A5F00206026 /* Core */ = {
 			isa = PBXGroup;
 			children = (
 				A23CF7D02119D8FE00A76E8F /* Webservice.swift */,
+				A207536E211CD14F00206026 /* PostGateway.swift */,
+				A2075372211CD5E500206026 /* APIPostGateway.swift */,
+				A2075370211CD4E700206026 /* Result.swift */,
 			);
-			path = WebService;
+			path = Core;
 			sourceTree = "<group>";
 		};
 		A2075358211C7ABC00206026 /* ViewModel */ = {
@@ -155,11 +166,12 @@
 		A207535F211C9ED800206026 /* Posts */ = {
 			isa = PBXGroup;
 			children = (
-				A23CF7C72119CB7000A76E8F /* PostViewController.swift */,
-				A2075360211C9F2200206026 /* PostTableViewCell.swift */,
-				A2075366211CA23700206026 /* PostViewRouter.swift */,
-				A2075368211CA2A900206026 /* PostPresenter.swift */,
 				A207536A211CA2DA00206026 /* PostConfigurator.swift */,
+				A2075368211CA2A900206026 /* PostPresenter.swift */,
+				A23CF7C72119CB7000A76E8F /* PostViewController.swift */,
+				A2075366211CA23700206026 /* PostViewRouter.swift */,
+				A2075360211C9F2200206026 /* PostTableViewCell.swift */,
+				A207536C211CC2A100206026 /* Post.swift */,
 			);
 			path = Posts;
 			sourceTree = "<group>";
@@ -193,7 +205,7 @@
 				A207535F211C9ED800206026 /* Posts */,
 				A207535D211C7B0F00206026 /* Model */,
 				A2075358211C7ABC00206026 /* ViewModel */,
-				A2075355211C7A5F00206026 /* WebService */,
+				A2075355211C7A5F00206026 /* Core */,
 				A23CF7CF2119D7EF00A76E8F /* Controllers */,
 				A23CF7A0211981A900A76E8F /* Assets.xcassets */,
 				A23CF79A211981A700A76E8F /* Main.storyboard */,
@@ -454,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2075371211CD4E700206026 /* Result.swift in Sources */,
 				A2075361211C9F2200206026 /* PostTableViewCell.swift in Sources */,
 				A23CF7C82119CB7000A76E8F /* PostViewController.swift in Sources */,
 				A207535C211C7B0C00206026 /* PostModel.swift in Sources */,
@@ -461,10 +474,13 @@
 				A2075365211CA16F00206026 /* ViewRouter.swift in Sources */,
 				A23CF7CC2119CC7400A76E8F /* PostDetailViewController.swift in Sources */,
 				A207536B211CA2DA00206026 /* PostConfigurator.swift in Sources */,
+				A2075373211CD5E500206026 /* APIPostGateway.swift in Sources */,
 				A2075369211CA2A900206026 /* PostPresenter.swift in Sources */,
 				A23CF7D12119D8FE00A76E8F /* Webservice.swift in Sources */,
 				A23CF7CA2119CB7F00A76E8F /* AlbumViewController.swift in Sources */,
 				A23CF799211981A700A76E8F /* ViewController.swift in Sources */,
+				A207536F211CD14F00206026 /* PostGateway.swift in Sources */,
+				A207536D211CC2A100206026 /* Post.swift in Sources */,
 				A23CF7CE2119CC8200A76E8F /* AlbumDetailViewController.swift in Sources */,
 				A2075357211C7AB800206026 /* PostViewModel.swift in Sources */,
 				A23CF797211981A700A76E8F /* AppDelegate.swift in Sources */,
